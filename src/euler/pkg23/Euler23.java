@@ -16,7 +16,7 @@ public class Euler23 {
     }
 
     public static int subtractor(int[] file) {
-        double y = 28123 * 28124 / 2;
+        int y = 28122 * 28123 / 2;
         for (int x = 0; x < file.length; x++) {
             y = y - file[x];
         }
@@ -25,7 +25,7 @@ public class Euler23 {
     }
 
     public static int[] tester(int max, int[] abundantnums) {
-        boolean[] buffer = new boolean[max];
+        boolean[] buffer = new boolean[max+1];
         int[] file = new int[max];
 
         int counter = 0;
@@ -61,7 +61,7 @@ public class Euler23 {
     public static int divisorsum(int x) {
         int sum, divisor;
         int y = 0;
-        int[] file = new int[(int) Math.sqrt(x) + 50];
+        int[] file = new int[(int) Math.sqrt(x) + 16];
         sum = 0;
         divisor = 1;
         do {
